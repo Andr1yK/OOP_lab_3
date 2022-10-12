@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		179E95CB28F430C300A337EC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 179E95CA28F430C300A337EC /* main.cpp */; };
+		179E95D428F4314E00A337EC /* Account.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 179E95D228F4314E00A337EC /* Account.cpp */; };
+		179E98F928F471D400A337EC /* getExchangeRate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 179E98F728F471D400A337EC /* getExchangeRate.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		179E95C728F430C300A337EC /* OOP_lab_3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OOP_lab_3; sourceTree = BUILT_PRODUCTS_DIR; };
 		179E95CA28F430C300A337EC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		179E95D228F4314E00A337EC /* Account.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Account.cpp; sourceTree = "<group>"; };
+		179E95D328F4314E00A337EC /* Account.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Account.hpp; sourceTree = "<group>"; };
+		179E98F728F471D400A337EC /* getExchangeRate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = getExchangeRate.cpp; sourceTree = "<group>"; };
+		179E98F828F471D400A337EC /* getExchangeRate.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = getExchangeRate.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +63,29 @@
 		179E95C928F430C300A337EC /* OOP_lab_3 */ = {
 			isa = PBXGroup;
 			children = (
+				179E98F628F471A200A337EC /* getExchangeRate */,
+				179E95D128F4311900A337EC /* Account */,
 				179E95CA28F430C300A337EC /* main.cpp */,
 			);
 			path = OOP_lab_3;
+			sourceTree = "<group>";
+		};
+		179E95D128F4311900A337EC /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				179E95D228F4314E00A337EC /* Account.cpp */,
+				179E95D328F4314E00A337EC /* Account.hpp */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		179E98F628F471A200A337EC /* getExchangeRate */ = {
+			isa = PBXGroup;
+			children = (
+				179E98F728F471D400A337EC /* getExchangeRate.cpp */,
+				179E98F828F471D400A337EC /* getExchangeRate.hpp */,
+			);
+			path = getExchangeRate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +131,9 @@
 				Base,
 			);
 			mainGroup = 179E95BE28F430C300A337EC;
+			packageReferences = (
+				179E95D528F4509800A337EC /* XCRemoteSwiftPackageReference "cpr" */,
+			);
 			productRefGroup = 179E95C828F430C300A337EC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -120,6 +149,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				179E95CB28F430C300A337EC /* main.cpp in Sources */,
+				179E95D428F4314E00A337EC /* Account.cpp in Sources */,
+				179E98F928F471D400A337EC /* getExchangeRate.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +304,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		179E95D528F4509800A337EC /* XCRemoteSwiftPackageReference "cpr" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/libcpr/cpr";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 179E95BF28F430C300A337EC /* Project object */;
 }
